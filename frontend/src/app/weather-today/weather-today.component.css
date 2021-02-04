@@ -1,0 +1,65 @@
+.weather-comp{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding: 20px 20px;
+}
+
+.weather-comp .search-temp{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.weather-comp .search-temp button{
+    background-color: transparent;
+    border-style: none;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.weather-comp .search-temp button img{
+    width: 28px;
+}
+
+.weather-comp .search-temp input{
+    width: 160px;
+    display: block;
+    border-style: none;
+    border-color: transparent;
+    font-size: 16px;
+    padding: 8px 8px;
+}
+
+.weather-comp .img-temp{
+    width: 50%;
+    display: block;
+    margin: 20px 0px;
+    border-radius: 16px;
+}
+
+.weather-comp p .temp{
+    font-size: 52px;
+}
+
+.weather-comp p .hour{
+    color: #C8C8C8;
+}
+
+.weather-comp .info-city{
+    margin: 20px  0px;
+}
+
+.weather-comp .info-city p{
+    margin-bottom: 12px;
+    width: 100%;
+    height: 24px;
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.weather-comp .info-city img{
+    width: 100%;
+    display: block;
+}
