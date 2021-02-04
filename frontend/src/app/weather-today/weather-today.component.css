@@ -47,7 +47,7 @@
 }
 
 .weather-comp .info-city{
-    margin: 20px  0px;
+    margin-top: 20px;
 }
 
 .weather-comp .info-city p{
@@ -60,6 +60,6 @@
 }
 
 .weather-comp .info-city img{
-    width: 100%;
+    width: 80%;
     display: block;
 }

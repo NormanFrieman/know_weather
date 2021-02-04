@@ -1,0 +1,37 @@
+.weather-week{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    background-color: transparent;
+    padding: 20px 40px;
+}
+
+.weather-week header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.weather-week header section{
+    border-radius: 50%;
+    background: #000000;
+    padding: 8px;
+}
+
+.weather-week header p{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.weather-week header section p{
+    color: #FFFFFF;;
+}
+
+.weather-week .week-temp{
+    margin: 40px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -1,0 +1,22 @@
+.temp-day{
+    background-color: #FFFFFF;
+    width: 90px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0px;
+    border-radius: 20px;
+}
+
+.temp-day p{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.temp-day img{
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+}
