@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+
+import { Day } from '../../helper/info-day';
 
 @Component({
   selector: 'app-temp-day',
@@ -7,17 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TempDayComponent implements OnInit {
 
-  day: string;
+  @Input() day: Day;
 
-  imageUrl: string;
-
-  temp: number;
-
-  constructor() {
-    this.day = "Sun";
-    this.imageUrl = "https://assets.weatherstack.com/images/wsymbols01_png_64/wsymbol_0001_sunny.png";
-    this.temp = 15;
-  }
+  constructor() {}
 
   ngOnInit(): void {
   }

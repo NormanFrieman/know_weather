@@ -1,0 +1,40 @@
+.highlights{
+    width: 100%;
+}
+
+.highlights .title{
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.highlights section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.highlights section div{
+    width: 80%;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.highlights section div:first-child{
+    margin-right: 20px;
+}
+
+.highlights section div p{
+    color: #c2c2c2;
+}
+
+.highlights section div .info{
+    color: #000000;
+    margin: 12px 0px;
+    font-size: 16px;
+}
+
+.highlights section div .info span{
+    font-size: 32px;
+}
