@@ -2,12 +2,12 @@ import { HttpResponse } from '../protocols/http';
 
 import { WeatherCity } from '../protocols/information';
 
-import { acessApiWeather } from '../connection/acessApiWeather';
+import { ApiWeatherToday } from '../connection/ApiWeatherToday';
 
 import { ResultWeather } from '../protocols/information';
 
 export const getTemp = async (city: string): Promise<HttpResponse> => {
-    const cityData: ResultWeather = await acessApiWeather(city);
+    const cityData: ResultWeather = await ApiWeatherToday(city);
 
     if(cityData.code === 404)
         return {
