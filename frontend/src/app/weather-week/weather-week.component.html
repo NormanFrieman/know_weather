@@ -1,13 +1,10 @@
 <div class="weather-week">
     <header>
-        <p>Week</p>
+        <p><span>Today's Highlights</span></p>
         <section>
             <p>ºC</p>
         </section>
     </header>
-    <div class="week-temp">
-        <app-temp-day *ngFor="let day of days" [day]="day"></app-temp-day>
-    </div>
     <div>
         <app-highlights [uvIndex]=5 [windSpeed]=7.7 [humidity]=12 [visibility]=5.2></app-highlights>
     </div>

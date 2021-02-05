@@ -2,27 +2,15 @@
     width: 100%;
 }
 
-.highlights .title{
-    font-weight: bold;
-    margin-bottom: 40px;
-}
-
 .highlights section{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     margin-bottom: 20px;
 }
 
 .highlights section div{
     width: 80%;
     background-color: #FFFFFF;
-    padding: 20px;
     border-radius: 20px;
-}
-
-.highlights section div:first-child{
-    margin-right: 20px;
+    padding: 20px;
 }
 
 .highlights section div p{
@@ -37,4 +25,37 @@
 
 .highlights section div .info span{
     font-size: 32px;
+}
+
+@media only screen and (min-width: 320px){
+    .highlights section{
+        display: block;
+    }
+    .highlights section div{
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .highlights section{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .highlights section div{
+        margin-bottom: 0px;
+    }
+    .highlights section div:first-child{
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    
+}
+
+@media only screen and (min-width: 1440px){
+    
 }

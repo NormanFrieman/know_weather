@@ -17,7 +17,7 @@ export class WeatherTodayComponent implements OnInit {
 
   constructor() {
     this.temp = 12;
-    this.day = "Monday";
+    this.day = "05/02";
     this.hour = "16:00";
     this.city = "New York, NY, USA";
   }

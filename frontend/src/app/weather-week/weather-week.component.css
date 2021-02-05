@@ -12,6 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 .weather-week header section{
@@ -20,12 +21,14 @@
     padding: 8px;
 }
 
-.weather-week header p{
+.weather-week header p span{
     font-weight: bold;
-    font-size: 16px;
+    margin-bottom: 40px;
 }
 
 .weather-week header section p{
+    font-weight: bold;
+    font-size: 16px;
     color: #FFFFFF;;
 }
 
