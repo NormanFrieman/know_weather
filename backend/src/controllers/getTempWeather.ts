@@ -5,7 +5,7 @@ import { badRequest } from '../helper/http-helper';
 import { getTemp } from '../commands/getTemp';
 import { Request, Response } from 'express';
 
-function GetTempWeather(req: Request, res: Response){
+async function GetTempWeather(req: Request, res: Response){
     const { city } = req.params;
     
     if(!city){
@@ -13,7 +13,7 @@ function GetTempWeather(req: Request, res: Response){
         return res.status(response.status).json(response);
     };
 
-    const response = getTemp(city);
+    const response = await getTemp(city);
     return res.status(response.status).json(response.body);
 };
 
