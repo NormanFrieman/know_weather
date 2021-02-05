@@ -4,7 +4,7 @@ import { WeatherCity } from '../protocols/information';
 
 import { acessApiWeather } from '../connection/acessApiWeather';
 
-import { ResultWeather } from '../protocols/http';
+import { ResultWeather } from '../protocols/information';
 
 export const getTemp = async (city: string): Promise<HttpResponse> => {
     const cityData: ResultWeather = await acessApiWeather(city);

@@ -18,3 +18,8 @@ export interface WeatherCity{
         visibility: number
     };
 };
+
+export interface ResultWeather{
+    data: any;
+    code: number;
+};
