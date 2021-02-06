@@ -10,7 +10,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-To get started with developing on frontend, you'll need to install dependencies. First of all you need to have [Node.js](https://nodejs.org/en/) installed. The version used in this project was 15.6.0.
+To get started with developing on frontend, you'll need to install dependencies. First of all you need to have [Node.js](https://nodejs.org/en/) installed. The version used in this project was 15.6.0. To install all dependencies run `npm install`.
 
 # License
 
