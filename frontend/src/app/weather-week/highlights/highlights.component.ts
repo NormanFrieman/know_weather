@@ -19,7 +19,11 @@ export class HighlightsComponent implements OnInit {
   
   @Input() visibility: number;
 
-  constructor(private getTemp: GetWeather) { }
+  public state: string;
+
+  constructor(private getTemp: GetWeather) {
+    this.state = "desactivate";
+  }
 
   ngOnInit(): void {
     this.getTemp.setInfoHighlights.subscribe((data: Highlights) => {
@@ -27,6 +31,8 @@ export class HighlightsComponent implements OnInit {
       this.windSpeed = data.windSpeed;
       this.humidity = data.humidity;
       this.visibility = data.visibility;
+
+      this.state = '';
     });
   }
 

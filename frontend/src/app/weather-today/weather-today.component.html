@@ -11,13 +11,15 @@
             placeholder="Search for places..."
         />
     </div>
-    <img class="img-temp" [src]="urlImage" />
-    <section>
-        <p><span class="temp">{{ temp }}</span>ºC</p>
-        <p>{{ day }}, <span class="hour">{{ hour }}</span></p>
-    </section>
-    <div class="info-city">
-        <p>{{ city }}</p>
-        <img src="../../assets/town.svg" />
+    <div [class]="state">
+        <img class="img-temp" [src]="urlImage" />
+        <section>
+            <p><span class="temp">{{ temp }}</span>ºC</p>
+            <p>{{ day }}, <span class="hour">{{ hour }}</span></p>
+        </section>
+        <div class="info-city">
+            <p>{{ city }}</p>
+            <img src="../../assets/town.svg" />
+        </div>
     </div>
 </div>

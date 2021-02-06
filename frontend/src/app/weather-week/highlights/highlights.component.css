@@ -2,6 +2,10 @@
     width: 100%;
 }
 
+.highlights section div .desactivate{
+    display: none;
+}
+
 .highlights section{
     margin-bottom: 20px;
 }
@@ -50,12 +54,4 @@
     .highlights section div:first-child{
         margin-right: 20px;
     }
-}
-
-@media only screen and (min-width: 1024px){
-    
-}
-
-@media only screen and (min-width: 1440px){
-    
 }

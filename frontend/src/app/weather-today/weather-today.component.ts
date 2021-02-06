@@ -21,7 +21,11 @@ export class WeatherTodayComponent implements OnInit {
 
   public urlImage: string;
 
-  constructor(private getTemp: GetWeather) {}
+  public state: string;
+
+  constructor(private getTemp: GetWeather) {
+    this.state = "desactivate";
+  }
 
   ngOnInit(): void {
     this.getCity('New York');
@@ -42,6 +46,8 @@ export class WeatherTodayComponent implements OnInit {
         this.urlImage = data.imageUrl;
 
         this.getTemp.setInfoHighlights.emit(data.highlights);
+
+        this.state = '';
 
       }, err => {
         console.error(err);
