@@ -24,18 +24,6 @@ export const getTemp = async (city: string): Promise<HttpResponse> => {
         day: `${day[2]}/${day[1]}`,
         hour: cityData.data.location.localtime.split(" ")[1],
         city: `${cityData.data.location.name}, ${cityData.data.location.country}`,
-        weekInfo: [
-            {
-                day: 'Sun',
-                imageUrl: "",
-                temp: 15,
-            },
-            {
-                day: 'Sun',
-                imageUrl: "",
-                temp: 20,
-            }
-        ],
         highlights: {
             uvIndex: 5,
             windSpeed: cityData.data.current.wind_speed,

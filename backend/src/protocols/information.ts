@@ -4,13 +4,6 @@ export interface WeatherCity{
     day: string;
     hour: string;
     city: string;
-
-    weekInfo: {
-        day: string,
-        imageUrl: string,
-        temp: number,
-    }[];
-
     highlights: {
         uvIndex: number,
         windSpeed: number,
