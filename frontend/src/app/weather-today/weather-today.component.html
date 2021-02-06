@@ -1,11 +1,17 @@
 <div class="weather-comp">
     <div class="search-temp">
-        <button>
+        <button
+            (click)="getCity()"
+        >
             <img src="../../assets/search.svg" />
         </button>
-        <input type="text" placeholder="Search for places..." />
+        <input
+            (keyup.enter)="getCity()" 
+            type="text"
+            placeholder="Search for places..."
+        />
     </div>
-    <img class="img-temp" src="https://assets.weatherstack.com/images/wsymbols01_png_64/wsymbol_0001_sunny.png" />
+    <img class="img-temp" [src]="urlImage" />
     <section>
         <p><span class="temp">{{ temp }}</span>ºC</p>
         <p>{{ day }}, <span class="hour">{{ hour }}</span></p>
