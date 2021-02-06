@@ -5,7 +5,7 @@ import { badRequest } from '../helper/http-helper';
 import { getTemp } from '../commands/getTemp';
 import { Request, Response } from 'express';
 
-async function GetTempWeather(req: Request, res: Response){
+async function GetTempWeather(req: Request, res: Response): Promise<Response>{
     const { city } = req.params;
     
     if(!city){
