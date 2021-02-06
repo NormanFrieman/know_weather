@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "^15.6.0"
+  },
   "scripts": {
     "build": "tsc",
-    "start": "node dist/src/index.js --unhandled-overrions=strict",
+    "start": "node dist/src/index.js",
     "dev": "ts-node-dev --ignore-watch node_modules src/index.ts"
   },
   "keywords": [],
