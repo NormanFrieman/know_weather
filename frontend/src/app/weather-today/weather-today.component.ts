@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 import { GetWeather } from './weather-today.service';
 
+import { Weather } from '../helper/info-day';
+
 @Component({
   selector: 'app-weather-today',
   templateUrl: './weather-today.component.html',
@@ -30,7 +32,7 @@ export class WeatherTodayComponent implements OnInit {
     if(cityName === '')
       alert("Empty input");
     else{
-      this.getTemp.getTempInfo(cityName).subscribe((data: any) => {
+      this.getTemp.getTempInfo(cityName).subscribe((data: Weather) => {
         console.log(data);
 
         this.temp = data.temp;
@@ -38,6 +40,8 @@ export class WeatherTodayComponent implements OnInit {
         this.hour = data.hour;
         this.city = data.city;
         this.urlImage = data.imageUrl;
+
+        this.getTemp.setInfoHighlights.emit(data.highlights);
 
       }, err => {
         console.error(err);

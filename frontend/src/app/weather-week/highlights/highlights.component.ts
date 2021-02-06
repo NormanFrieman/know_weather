@@ -1,12 +1,14 @@
-import { Injectable } from "@angular/core";
 import { Component, Input, OnInit } from '@angular/core';
+
+import { Highlights } from '../../helper/info-day';
+
+import { GetWeather } from '../../weather-today/weather-today.service';
 
 @Component({
   selector: 'app-highlights',
   templateUrl: './highlights.component.html',
   styleUrls: ['./highlights.component.css']
 })
-@Injectable()
 export class HighlightsComponent implements OnInit {
 
   @Input() uvIndex: number;
@@ -17,12 +19,21 @@ export class HighlightsComponent implements OnInit {
   
   @Input() visibility: number;
 
-  constructor() { }
+  constructor(private getTemp: GetWeather) { }
 
   ngOnInit(): void {
+    this.getTemp.setInfoHighlights.subscribe((data: Highlights) => {
+      this.uvIndex = data.uvIndex;
+      this.windSpeed = data.windSpeed;
+      this.humidity = data.humidity;
+      this.visibility = data.visibility;
+    });
   }
 
-  configInfo(highlights: any): void{
-
+  configInfo(highlights: Highlights): void{
+    this.uvIndex = highlights.uvIndex;
+    this.windSpeed = highlights.windSpeed;
+    this.humidity = highlights.humidity;
+    this.visibility = highlights.visibility;
   }
 }
