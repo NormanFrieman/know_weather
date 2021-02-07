@@ -1,5 +1,9 @@
 # Backend
 
+![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Node](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
+
 > In this repository there is the backend of the Know Weather project.
 
 The backend is responsible for taking the name of the city passed by the frontend and passing that name to the weather query API. After the response from the API, the backend configures the response, passing only the important data to the application frontend.
