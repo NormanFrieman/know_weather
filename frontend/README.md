@@ -1,6 +1,8 @@
 # Frontend
 
-In this repository there is the frontend of the Know Weather project.
+> In this repository there is the frontend of the Know Weather project.
+
+The frontend is responsible for displaying data from the backend.
 
 The frontend was deployed to firebase hosting, which you can access [here](https://know-weather.web.app/).
 
